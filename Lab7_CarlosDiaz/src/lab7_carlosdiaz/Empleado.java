@@ -20,5 +20,10 @@ public class Empleado extends Persona{
     public void setCarrosE(ArrayList<Carro> carrosE) {
         this.carrosE = carrosE;
     }
+
+    @Override
+    public String toString() {
+        return this.getNombre() + " "+this.getApellido()+" "+this.getEdad()+" años "+getCarrosE().size()+" carros";
+    }
     
 }

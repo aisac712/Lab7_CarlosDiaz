@@ -151,30 +151,33 @@
                       <Component id="b_crearCliente" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="1" groupAlignment="0" attributes="0">
                           <Component id="jScrollPane2" min="-2" pref="366" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                      <Component id="tf_nombreC" min="-2" pref="219" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="jToggleButton1" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                          <Component id="tf_nombreC" min="-2" pref="219" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="47" pref="47" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="sp_edadC" min="-2" pref="41" max="-2" attributes="0"/>
-                                          <Component id="tf_apellidoC" min="-2" pref="219" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="47" pref="47" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="sp_edadC" min="-2" pref="41" max="-2" attributes="0"/>
+                                              <Component id="tf_apellidoC" min="-2" pref="219" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
-                              </Group>
-                              <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="cb_todosCarros" min="-2" pref="141" max="-2" attributes="0"/>
-                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="cb_todosCarros" min="-2" pref="141" max="-2" attributes="0"/>
+                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -186,11 +189,13 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="tf_nombreC" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="tf_nombreC" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
@@ -204,20 +209,23 @@
                               <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="tf_apellidoC" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sp_edadC" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="55" max="32767" attributes="0"/>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                          <Component id="cb_todosCarros" min="-2" pref="35" max="-2" attributes="0"/>
+                          <Component id="cb_todosCarros" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jToggleButton1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="sp_edadC" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="55" max="32767" attributes="0"/>
-                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="b_crearCliente" min="-2" max="-2" attributes="0"/>
@@ -314,6 +322,17 @@
             <Property name="text" type="java.lang.String" value="Carros del cleinte"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JToggleButton" name="jToggleButton1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="A&#xf1;adir carro"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[119, 35]"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton1ActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JDialog" name="jd_empleadoCrear">
@@ -348,7 +367,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                          <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                          <Component id="b_crearEmpleado" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -356,7 +375,11 @@
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jButton4" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="cb_clientes" alignment="0" min="-2" pref="295" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cb_clientes" min="-2" pref="295" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -394,6 +417,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="cb_clientes" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -405,7 +429,7 @@
                       <Component id="jScrollPane3" min="-2" pref="150" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                  <Component id="b_crearEmpleado" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="111" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -487,6 +511,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="-&gt;"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane3">
           <AuxValues>
@@ -495,7 +522,7 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
-            <Component class="javax.swing.JList" name="jl_carrosClientesE1">
+            <Component class="javax.swing.JList" name="jl_carrosEmpleado">
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                   <Connection code="new DefaultListModel()" type="code"/>
@@ -512,10 +539,21 @@
             <Property name="text" type="java.lang.String" value="Carros por Lavar"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JButton" name="b_crearEmpleado">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Crear empleado"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_crearEmpleadoActionPerformed"/>
+          </Events>
+        </Component>
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Crear empleade"/>
+            <Property name="text" type="java.lang.String" value="Cargar carros"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -575,18 +613,75 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="358" max="32767" attributes="0"/>
-              <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="346" max="-2" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
-              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="cb_empleadosF" min="-2" pref="139" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="71" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="cb_empleadosF3" min="-2" pref="139" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="cb_empleadosF2" min="-2" pref="139" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="239" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                              <Component id="barra3" min="-2" pref="415" max="-2" attributes="0"/>
+                              <EmptySpace pref="18" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jScrollPane5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="222" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="300" max="-2" attributes="0"/>
+                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jButton6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jButton1" min="-2" pref="117" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                              <Component id="jButton2" min="-2" pref="127" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                      <Component id="barra1" min="-2" pref="415" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
+                      <Component id="barra2" min="-2" pref="415" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -594,15 +689,56 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="531" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cb_empleadosF" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jScrollPane4" min="-2" pref="160" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cb_empleadosF3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jScrollPane6" min="-2" pref="160" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="barra1" alignment="1" min="-2" pref="25" max="-2" attributes="0"/>
+                  <Component id="barra2" min="-2" pref="25" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="49" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cb_empleadosF2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jScrollPane5" min="-2" pref="160" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Component id="barra3" min="-2" pref="25" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -611,6 +747,9 @@
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear Clientes"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[101, 35]"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -619,6 +758,9 @@
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear Empleado"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[101, 35]"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
@@ -627,6 +769,9 @@
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Crear Carro"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[101, 35]"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
@@ -635,7 +780,144 @@
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Clientes"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[101, 35]"/>
+        </Property>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cb_empleadosF">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[31, 35]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tabla1">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="0">
+                <Column editable="true" title="Placa" type="java.lang.Object"/>
+                <Column editable="true" title="Tama&#xf1;o" type="java.lang.Object"/>
+                <Column editable="true" title="Nivel de Suciedad" type="java.lang.Object"/>
+                <Column editable="true" title="Tiempo" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Empleado"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Empleado"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cb_empleadosF2">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[31, 35]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tabla2">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="0">
+                <Column editable="true" title="Placa" type="java.lang.Object"/>
+                <Column editable="true" title="Tama&#xf1;o" type="java.lang.Object"/>
+                <Column editable="true" title="Nivel de Suciedad" type="java.lang.Object"/>
+                <Column editable="true" title="Tiempo" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel17">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Empleado"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cb_empleadosF3">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[31, 35]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tabla3">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="0">
+                <Column editable="true" title="Placa" type="java.lang.Object"/>
+                <Column editable="true" title="Tama&#xf1;o" type="java.lang.Object"/>
+                <Column editable="true" title="Nivel de Suciedad" type="java.lang.Object"/>
+                <Column editable="true" title="Tiempo" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="jButton7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Limpiar carros"/>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[115, 35]"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JProgressBar" name="barra1">
+    </Component>
+    <Component class="javax.swing.JProgressBar" name="barra2">
+    </Component>
+    <Component class="javax.swing.JProgressBar" name="barra3">
     </Component>
   </SubComponents>
 </Form>
