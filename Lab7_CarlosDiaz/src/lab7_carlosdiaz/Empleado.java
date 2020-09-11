@@ -5,10 +5,14 @@ import java.util.ArrayList;
 public class Empleado extends Persona{
     private ArrayList<Carro> carrosE = new ArrayList();
 
-    public Empleado(String nombre, String apellido, String edad) {
+    public Empleado(String nombre, String apellido, int edad) {
         super(nombre, apellido, edad);
     }
 
+    public Empleado() {
+        super();
+    }
+    
     public ArrayList<Carro> getCarrosE() {
         return carrosE;
     }

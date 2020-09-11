@@ -13,6 +13,9 @@ public class Carro {
         this.nivSuciedad = nivSuciedad;
     }
 
+    public Carro() {
+    }
+    
     public String getPlaca() {
         return placa;
     }
@@ -43,6 +46,11 @@ public class Carro {
 
     public void setNivSuciedad(int nivSuciedad) {
         this.nivSuciedad = nivSuciedad;
+    }
+
+    @Override
+    public String toString() {
+        return placa +" "+ tamano +" "+ numPuertas +" "+ nivSuciedad;
     }
     
 }
