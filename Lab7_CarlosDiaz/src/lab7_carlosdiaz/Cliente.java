@@ -1,9 +1,11 @@
 package lab7_carlosdiaz;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Cliente extends Persona{
+public class Cliente extends Persona implements Serializable{
     private ArrayList<Carro> carrosC = new ArrayList();
+    private static final long SerialVersionUID=777L;
 
     public Cliente(String nombre, String apellido, int edad) {
         super(nombre, apellido, edad);

@@ -1,10 +1,13 @@
 package lab7_carlosdiaz;
 
-public class Carro {
+import java.io.Serializable;
+
+public class Carro implements Serializable{
     private String placa;
     private String tamano;
     private int numPuertas;         //(Pequeño, mediano o Grande)
     private int nivSuciedad;        //5-10
+    private static final long SerialVersionUID=777L;
 
     public Carro(String placa, String tamano, int numPuertas, int nivSuciedad) {
         this.placa = placa;

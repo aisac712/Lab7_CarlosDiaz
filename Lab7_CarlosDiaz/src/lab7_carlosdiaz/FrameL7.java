@@ -71,16 +71,16 @@ public class FrameL7 extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         sp_edadE = new javax.swing.JSpinner();
         jLabel13 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        b_pasarCarroCliente = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jl_carrosEmpleado = new javax.swing.JList<>();
         jLabel14 = new javax.swing.JLabel();
         b_crearEmpleado = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         cb_empleadosF = new javax.swing.JComboBox<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         tabla1 = new javax.swing.JTable();
@@ -99,10 +99,13 @@ public class FrameL7 extends javax.swing.JFrame {
         barra3 = new javax.swing.JProgressBar();
         b_limpiar2 = new javax.swing.JButton();
         b_limpiar3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         jLabel1.setText("Placa");
@@ -307,10 +310,10 @@ public class FrameL7 extends javax.swing.JFrame {
 
         jLabel13.setText("Seleccionar cliente");
 
-        jButton4.setText("->");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        b_pasarCarroCliente.setText("->");
+        b_pasarCarroCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                b_pasarCarroClienteActionPerformed(evt);
             }
         });
 
@@ -333,10 +336,36 @@ public class FrameL7 extends javax.swing.JFrame {
             }
         });
 
+        jLabel18.setFont(new java.awt.Font("Tahoma", 2, 13)); // NOI18N
+        jLabel18.setText("Seleccionarlo y luego presionar el botón");
+
         javax.swing.GroupLayout jd_empleadoCrearLayout = new javax.swing.GroupLayout(jd_empleadoCrear.getContentPane());
         jd_empleadoCrear.getContentPane().setLayout(jd_empleadoCrearLayout);
         jd_empleadoCrearLayout.setHorizontalGroup(
             jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_empleadoCrearLayout.createSequentialGroup()
+                .addContainerGap(73, Short.MAX_VALUE)
+                .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel13)
+                    .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(b_crearEmpleado)
+                        .addGroup(jd_empleadoCrearLayout.createSequentialGroup()
+                            .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jd_empleadoCrearLayout.createSequentialGroup()
+                                    .addComponent(cb_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jButton5))
+                                .addGroup(jd_empleadoCrearLayout.createSequentialGroup()
+                                    .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel18)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(18, 18, 18)
+                                    .addComponent(b_pasarCarroCliente)))
+                            .addGap(28, 28, 28)
+                            .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel14)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(52, 52, 52))
             .addGroup(jd_empleadoCrearLayout.createSequentialGroup()
                 .addGap(146, 146, 146)
                 .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -353,27 +382,6 @@ public class FrameL7 extends javax.swing.JFrame {
                             .addComponent(sp_edadE, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tf_apellidoE, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_empleadoCrearLayout.createSequentialGroup()
-                .addContainerGap(73, Short.MAX_VALUE)
-                .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13)
-                    .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(b_crearEmpleado)
-                        .addGroup(jd_empleadoCrearLayout.createSequentialGroup()
-                            .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jd_empleadoCrearLayout.createSequentialGroup()
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jButton4))
-                                .addGroup(jd_empleadoCrearLayout.createSequentialGroup()
-                                    .addComponent(cb_clientes, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jButton5)))
-                            .addGap(28, 28, 28)
-                            .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel14)
-                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(52, 52, 52))
         );
         jd_empleadoCrearLayout.setVerticalGroup(
             jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -400,11 +408,13 @@ public class FrameL7 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jd_empleadoCrearLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_empleadoCrearLayout.createSequentialGroup()
-                        .addComponent(jButton4)
+                        .addComponent(b_pasarCarroCliente)
                         .addGap(61, 61, 61))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel18)
+                .addGap(4, 4, 4)
                 .addComponent(b_crearEmpleado)
                 .addContainerGap(111, Short.MAX_VALUE))
         );
@@ -435,9 +445,6 @@ public class FrameL7 extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setText("Clientes");
-        jButton6.setPreferredSize(new java.awt.Dimension(101, 35));
-
         cb_empleadosF.setPreferredSize(new java.awt.Dimension(31, 35));
 
         tabla1.setModel(new javax.swing.table.DefaultTableModel(
@@ -450,9 +457,9 @@ public class FrameL7 extends javax.swing.JFrame {
         ));
         jScrollPane4.setViewportView(tabla1);
 
-        jLabel15.setText("Empleado");
+        jLabel15.setText("Empleado 1");
 
-        jLabel16.setText("Empleado");
+        jLabel16.setText("Empleado 2");
 
         cb_empleadosF2.setPreferredSize(new java.awt.Dimension(31, 35));
 
@@ -466,7 +473,7 @@ public class FrameL7 extends javax.swing.JFrame {
         ));
         jScrollPane5.setViewportView(tabla2);
 
-        jLabel17.setText("Empleado");
+        jLabel17.setText("Empleado 3");
 
         cb_empleadosF3.setPreferredSize(new java.awt.Dimension(31, 35));
 
@@ -504,15 +511,50 @@ public class FrameL7 extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setText("Información Importante");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
         jMenu1.setText("Archivo");
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setText("Guardar");
+        jMenuItem1.setText("Guardar Binarios");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem2.setText("Abrir");
+        jMenuItem2.setText("Abrir Binarios");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
+
+        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem4.setText("Guardar Tablas");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem4);
+
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem3.setText("Cargar Tablas");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem3);
 
         jMenuBar1.add(jMenu1);
 
@@ -550,9 +592,6 @@ public class FrameL7 extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(cb_empleadosF2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(barra3, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(215, 215, 215)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -561,30 +600,35 @@ public class FrameL7 extends javax.swing.JFrame {
                                     .addComponent(b_limpiar3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(barra2, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(barra1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(barra3, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(101, 101, 101))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(300, 300, 300)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(60, 60, 60)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(69, 69, 69)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(69, 69, 69)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addComponent(barra1, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(102, 102, 102)
-                        .addComponent(barra2, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(437, 437, 437)
+                        .addComponent(jButton4)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton4)
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -604,10 +648,10 @@ public class FrameL7 extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(barra1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(barra2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                    .addComponent(barra3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cb_empleadosF2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16))
@@ -620,9 +664,9 @@ public class FrameL7 extends javax.swing.JFrame {
                         .addComponent(b_limpiar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(b_limpiar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(21, 21, 21)
-                .addComponent(barra3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(barra2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51))
         );
 
         pack();
@@ -637,7 +681,9 @@ public class FrameL7 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // MOSTRAR VENTANA CLIENTE    
+        // MOSTRAR VENTANA CLIENTE
+        jl_carrosCliente.setModel( new DefaultListModel() );
+        
         jd_clientesCrear.setModal(true);        
         jd_clientesCrear.pack();
         jd_clientesCrear.setLocationRelativeTo(this);        
@@ -646,9 +692,14 @@ public class FrameL7 extends javax.swing.JFrame {
 
     private void b_crearCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_crearCarroActionPerformed
         // CREAR CARRO
-        
-            int suciedead = Integer.parseInt( tf_suciedad.getText() );
-            while( suciedead<5 || suciedead>10 ){
+        int suciedead = 0;
+            if(tf_suciedad.getText().isEmpty()){
+                suciedead = Integer.parseInt(JOptionPane.showInputDialog(this, "Ingresa nivel de suciedad:"));
+            } else{
+                suciedead = Integer.parseInt( tf_suciedad.getText() );
+            }
+            
+            while( suciedead<5 || suciedead>10){
                 suciedead = Integer.parseInt(JOptionPane.showInputDialog(this, "El nivel de suciedad debe estar entre 5-10"));
             }
             
@@ -661,11 +712,18 @@ public class FrameL7 extends javax.swing.JFrame {
             tf_placa.setText("");   tf_suciedad.setText("");   cb_tamano.setSelectedIndex(0);   sp_puertas.setValue(0);
             jd_carroCrear.setVisible(false);
         
+            //BINARIO
+            adminCarros ap=new adminCarros("./carritos.lab");
+            ap.cargarArchivo();
+            ap.setCarro(c);
+            ap.escribirArchivo();
         
     }//GEN-LAST:event_b_crearCarroActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // CREAR EMPLEADO
+        jl_carrosClientesE.setModel( new DefaultListModel() );
+        jl_carrosEmpleado.setModel ( new DefaultListModel() );
         jd_empleadoCrear.setModal(true);        
         jd_empleadoCrear.pack();
         jd_empleadoCrear.setLocationRelativeTo(this);        
@@ -683,49 +741,64 @@ public class FrameL7 extends javax.swing.JFrame {
         
         System.out.println(clienteGlobal.getCarrosC());
         if(!clienteGlobal.getCarrosC().isEmpty()){
-            tf_nombreC.setText("");     tf_apellidoC.setText("");     sp_edadC.setValue(0);             //reiniciar camps
+            
             
             DefaultComboBoxModel modelito = (DefaultComboBoxModel) cb_clientes.getModel();
-            modelito.addElement(clienteGlobal);
+            //modelito.addElement(new Cliente(clienteGlobal.getNombre(), clienteGlobal.getApellido(), clienteGlobal.getEdad()));
             
-            /*Cliente c = new Cliente(tf_nombreC.getText(), tf_apellidoC.getText(), edad);
-            for (int i = 0; i < jl_carrosCliente.getMaxSelectionIndex(); i++) {                         //meterle los carros al cliente
+            Cliente c = new Cliente(clienteGlobal.getNombre(), clienteGlobal.getApellido(), clienteGlobal.getEdad());
+            /*for (int i = 0; i < jl_carrosCliente.getMaxSelectionIndex(); i++) {                         //meterle los carros al cliente
                 DefaultListModel modeloLISTA = (DefaultListModel) jl_carrosCliente.getModel();
                 Carro carroParaCliente = (Carro) modeloLISTA.get(jl_carrosCliente.getSelectedIndex());
                 //System.out.println(carroParaCliente);
                 c.getCarrosC().add(carroParaCliente);
                 
             }*/
-             //modelito.addElement(c);
+            for (int i = 0; i < clienteGlobal.getCarrosC().size(); i++) {
+                c.getCarrosC().add(clienteGlobal.getCarrosC().get(i));
+            }
+            modelito.addElement(c);
             cb_clientes.setModel(modelito);
             
+            //BINARIO
+            AdminClientes ap=new AdminClientes("./clientes.lab");
+            ap.cargarArchivo();
+            ap.setCliente(c);
+            ap.escribirArchivo();
+            clienteGlobal = new Cliente();      //se reinicia
+            tf_nombreC.setText("");     tf_apellidoC.setText("");     sp_edadC.setValue(0);             //reiniciar camps
             jd_clientesCrear.setVisible(false);
         } else{
-            JOptionPane.showMessageDialog(jMenu1, "Añade al menos 1 carro al cliente");
+            JOptionPane.showMessageDialog(this, "Añade al menos 1 carro al cliente");
         }
         
     }//GEN-LAST:event_b_crearClienteActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void b_pasarCarroClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_pasarCarroClienteActionPerformed
         // AGARRAR LOS DE LA LISTA Y PASARLO A EMPLEADO
         if (jl_carrosClientesE.getSelectedIndex() >= 0) {
             //obtener la persona a guardar
-            DefaultListModel modeloLISTA = (DefaultListModel) jl_carrosClientesE.getModel();
-            Carro carroParaEmpleado = (Carro) modeloLISTA.get(jl_carrosClientesE.getSelectedIndex());
-            System.out.println(carroParaEmpleado);
+            if(empleadoGlobal.getCarrosE().size()<5){
+                DefaultListModel modeloLISTA = (DefaultListModel) jl_carrosClientesE.getModel();
+                Carro carroParaEmpleado = (Carro) modeloLISTA.get(jl_carrosClientesE.getSelectedIndex());
+                System.out.println(carroParaEmpleado);
+                modeloLISTA.removeElementAt(jl_carrosClientesE.getSelectedIndex()); //***
 
-
-            DefaultListModel modelito
+                DefaultListModel modelito
                 = (DefaultListModel) jl_carrosEmpleado.getModel();
 
-            //modelito.addElement(new Carro(carroParaEmpleado.getPlaca(), carroParaEmpleado.getTamano(), 
-            //        carroParaEmpleado.getNumPuertas(), carroParaEmpleado.getNivSuciedad()));            //añado el carro
-            modelito.addElement(carroParaEmpleado);            //añado el carro
+                //modelito.addElement(new Carro(carroParaEmpleado.getPlaca(), carroParaEmpleado.getTamano(), 
+                //        carroParaEmpleado.getNumPuertas(), carroParaEmpleado.getNivSuciedad()));            //añado el carro
+                modelito.addElement(carroParaEmpleado);            //añado el carro
 
-            empleadoGlobal.getCarrosE().add(carroParaEmpleado);
-            jl_carrosEmpleado.setModel(modelito);
+                empleadoGlobal.getCarrosE().add(carroParaEmpleado);
+                jl_carrosEmpleado.setModel(modelito);
+            } else{
+                JOptionPane.showMessageDialog(this, "No puede tener máas de 5 carros");
+            }
+            
         }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_b_pasarCarroClienteActionPerformed
 
     private void b_crearEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_crearEmpleadoActionPerformed
         // CREAR EMPLEADO
@@ -734,26 +807,41 @@ public class FrameL7 extends javax.swing.JFrame {
             edad = Integer.parseInt(JOptionPane.showInputDialog(this, "Edad mayor a 0"));
         }
         //clienteGlobal = Cliente(, tf_apellidoC.getText(), edad);
-        empleadoGlobal.setNombre(tf_nombreE.getText());      empleadoGlobal.setApellido(tf_apellidoE.getText());      empleadoGlobal.setEdad(edad);
-        
-        System.out.println(empleadoGlobal.getCarrosE());
-        
-        
-        //PASAR A COMBOBOX DEL FRAME PRINCIPAL
-        DefaultComboBoxModel modelito = (DefaultComboBoxModel) cb_empleadosF.getModel();
-        modelito.addElement(empleadoGlobal);
-        cb_empleadosF.setModel(modelito);
-        
-        DefaultComboBoxModel modelito2 = (DefaultComboBoxModel) cb_empleadosF2.getModel();
-        modelito2.addElement(empleadoGlobal);
-        cb_empleadosF2.setModel(modelito2);
-        
-        DefaultComboBoxModel modelito3 = (DefaultComboBoxModel) cb_empleadosF3.getModel();
-        modelito3.addElement(empleadoGlobal);
-        cb_empleadosF3.setModel(modelito3);
-        
-        tf_nombreC.setText("");     tf_apellidoC.setText("");     sp_edadE.setValue(0);             //reiniciar campos
-        jd_empleadoCrear.setVisible(false);
+        if(!empleadoGlobal.getCarrosE().isEmpty()){
+            empleadoGlobal.setNombre(tf_nombreE.getText());      empleadoGlobal.setApellido(tf_apellidoE.getText());      empleadoGlobal.setEdad(edad);
+
+            System.out.println(empleadoGlobal.getCarrosE());
+            Empleado e = new Empleado(empleadoGlobal.getNombre(), empleadoGlobal.getApellido(), empleadoGlobal.getEdad());
+            for (int i = 0; i < empleadoGlobal.getCarrosE().size(); i++) {
+                e.getCarrosE().add(empleadoGlobal.getCarrosE().get(i));
+            }
+
+            //PASAR A COMBOBOX DEL FRAME PRINCIPAL
+            DefaultComboBoxModel modelito = (DefaultComboBoxModel) cb_empleadosF.getModel();
+            modelito.addElement(e);
+            cb_empleadosF.setModel(modelito);
+
+            DefaultComboBoxModel modelito2 = (DefaultComboBoxModel) cb_empleadosF2.getModel();
+            modelito2.addElement(e);
+            cb_empleadosF2.setModel(modelito2);
+
+            DefaultComboBoxModel modelito3 = (DefaultComboBoxModel) cb_empleadosF3.getModel();
+            modelito3.addElement(e);
+            cb_empleadosF3.setModel(modelito3);
+            
+            
+            //BINARIO
+            AdminEmpleados ap=new AdminEmpleados("./empleados.lab");
+            ap.cargarArchivo();
+            ap.setEmpleado(e);
+            ap.escribirArchivo();
+            empleadoGlobal = new Empleado();      //se reinicia
+            tf_nombreE.setText("");     tf_apellidoE.setText("");     sp_edadE.setValue(0);             //reiniciar campos
+            jd_empleadoCrear.setVisible(false);
+        } else{
+            JOptionPane.showMessageDialog(jMenu1, "El empleado debe tener al menos 1 carro");
+        }
+            
     }//GEN-LAST:event_b_crearEmpleadoActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -783,39 +871,155 @@ public class FrameL7 extends javax.swing.JFrame {
 
         modelo.addElement(carroSel);
         jl_carrosCliente.setModel(modelo);
+        cb_todosCarros.removeItem(cb_todosCarros.getSelectedItem());
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void b_limpiar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_limpiar1ActionPerformed
         // LIMPIAR CARROS CB#1
+        System.out.println("carros:");
         Empleado empSel = (Empleado) cb_empleadosF.getSelectedItem();
-        for (int i = 0; i < empSel.getCarrosE().size(); i++) {
-            Carro carroSel = empSel.getCarrosE().get(i);
-            int limite;
-            if(carroSel.getTamano().equals("Grande")){
-                limite = (int) (carroSel.getNivSuciedad()*1.5);
-            } else if(carroSel.getTamano().equals("Mediano")){
-                limite = (int) (carroSel.getNivSuciedad()*1.8);
-            } else{
-                limite = (int) (carroSel.getNivSuciedad()*2.2);
-            }
-            barra1.setMaximum(limite);
+        if(!(cb_empleadosF2.getSelectedItem().equals(empSel)) && !(cb_empleadosF3.getSelectedItem().equals(empSel))){
+            for (int i = 0; i < empSel.getCarrosE().size(); i++) {
+                Carro carroSel = empSel.getCarrosE().get(i);
+                System.out.print(carroSel+"-");
+                int limite=0;
+                if(carroSel.getTamano().equals("Grande")){
+                    limite = (int) (carroSel.getNivSuciedad()*1.5);
+                } else if(carroSel.getTamano().equals("Mediano")){
+                    limite = (int) (carroSel.getNivSuciedad()*1.8);
+                } else if(carroSel.getTamano().equals("Pequeño")){
+                    limite = (int) (carroSel.getNivSuciedad()*2.2);
+                }
+                //barra1.setMaximum(limite);
 
-            hiloBarra hB = new hiloBarra(barra1, tabla1, carroSel, limite);
-            hB.start();
-            barra1.setValue(0);
+                hiloBarra hB = new hiloBarra(barra1, tabla1, carroSel, limite);
+                hB.getBarra().setMaximum(limite);
+                hB.start();
+                if(!hB.isAlive()){                      //para ver si ya termino
+                    barra1.setValue(0);
+                    hB.setVive(false);
+                    System.out.println("se apago");
+                }
+                
+            }
+        } else{
+            JOptionPane.showMessageDialog(this, "Ese empleado ya está seleccionado");
         }
-        
-        
         
     }//GEN-LAST:event_b_limpiar1ActionPerformed
 
     private void b_limpiar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_limpiar2ActionPerformed
         // LIMPIAR CARROS CB#2
+        Empleado empSel = (Empleado) cb_empleadosF2.getSelectedItem();
+        if(!(cb_empleadosF.getSelectedItem().equals(empSel)) && !(cb_empleadosF3.getSelectedItem().equals(empSel))){
+            for (int i = 0; i < empSel.getCarrosE().size(); i++) {
+                Carro carroSel = empSel.getCarrosE().get(i);
+                int limite=0;
+                if(carroSel.getTamano().equals("Grande")){
+                    limite = (int) (carroSel.getNivSuciedad()*1.5);
+                } else if(carroSel.getTamano().equals("Mediano")){
+                    limite = (int) (carroSel.getNivSuciedad()*1.8);
+                } else if(carroSel.getTamano().equals("Pequeño")){
+                    limite = (int) (carroSel.getNivSuciedad()*2.2);
+                }
+                barra2.setMaximum(limite);
+
+                hiloBarra hB = new hiloBarra(barra2, tabla2, carroSel, limite);
+                hB.start();
+                if(!hB.isAlive()){
+                    barra2.setValue(0);
+                }
+            }
+        } else{
+            JOptionPane.showMessageDialog(this, "Ese empleado ya está seleccionado");
+        }
+        
+            
     }//GEN-LAST:event_b_limpiar2ActionPerformed
 
     private void b_limpiar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_limpiar3ActionPerformed
         // LIMPIAR CARROS CB#3
+        Empleado empSel = (Empleado) cb_empleadosF3.getSelectedItem();
+        if(!(cb_empleadosF.getSelectedItem().equals(empSel)) && !(cb_empleadosF2.getSelectedItem().equals(empSel))){
+            for (int i = 0; i < empSel.getCarrosE().size(); i++) {
+                Carro carroSel = empSel.getCarrosE().get(i);
+                int limite=0;
+                if(carroSel.getTamano().equals("Grande")){
+                    limite = (int) (carroSel.getNivSuciedad()*1.5);
+                } else if(carroSel.getTamano().equals("Mediano")){
+                    limite = (int) (carroSel.getNivSuciedad()*1.8);
+                } else if(carroSel.getTamano().equals("Pequeño")){
+                    limite = (int) (carroSel.getNivSuciedad()*2.2);
+                }
+                barra3.setMaximum(limite);
+
+                hiloBarra hB = new hiloBarra(barra3, tabla3, carroSel, limite);
+                hB.start();
+                if(!hB.isAlive()){
+                    barra3.setValue(0);
+                }
+            }
+        } else{
+            JOptionPane.showMessageDialog(this, "Ese empleado ya está seleccionado");
+        }
+             
     }//GEN-LAST:event_b_limpiar3ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // GUARDAR ARCHIVO
+        
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // CARGAR AARCHIVOS BINARIOS
+        //cargar carros
+        adminCarros ap=new adminCarros("./carritos.lab");
+        ap.cargarArchivo();
+        DefaultComboBoxModel modelo = new DefaultComboBoxModel( ap.getListaCarros().toArray() );
+        cb_todosCarros.setModel(modelo);                 //del archivo
+        
+        //cargar clientes
+        AdminClientes ac =new AdminClientes("./clientes.lab");
+        ac.cargarArchivo();
+        DefaultComboBoxModel modelo2 = new DefaultComboBoxModel(  ac.getListaClientes().toArray() );
+        cb_clientes.setModel(modelo2);                 //del archivo
+        
+        //cargar empleados
+        AdminEmpleados ae =new AdminEmpleados("./empleados.lab");
+        ae.cargarArchivo();
+        DefaultComboBoxModel modelo3 = new DefaultComboBoxModel( ae.getListaEmpleados().toArray() );
+        cb_empleadosF.setModel(modelo3);        cb_empleadosF2.setModel(modelo3);        cb_empleadosF3.setModel(modelo3);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // VER
+        JOptionPane.showMessageDialog(this, "Todo objeto se guarda automáticamente en un archivo binario (uno para cada tipo de objeto)\n"+"Si se desea restaurar el programa"
+                + "en su estado anterior, hacer click en Cargar Tablas (por la herecia, los nombres y apellidos salen en null");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // CARGAR TABLAS
+        adminTabla aT=new adminTabla("./tabla.lab");
+        aT.cargarArchivo();
+        Tabla t1 = aT.getListaTablas().get(aT.getListaTablas().size()-1);
+        tabla1.setModel( t1.getModelo() );
+        Tabla t2 = aT.getListaTablas().get(aT.getListaTablas().size()-2);
+        tabla2.setModel( t2.getModelo() );
+        Tabla t3 = aT.getListaTablas().get(aT.getListaTablas().size()-3);
+        tabla3.setModel( t3.getModelo() );
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        DefaultTableModel modelo = (DefaultTableModel) tabla1.getModel();   DefaultTableModel modelo2 = (DefaultTableModel) tabla2.getModel();
+        DefaultTableModel modelo3 = (DefaultTableModel) tabla3.getModel();
+        Tabla t1 = new Tabla(modelo);   Tabla t2 = new Tabla(modelo2);      Tabla t3 = new Tabla(modelo3);
+        //BINARIO
+        adminTabla aT=new adminTabla("./tabla.lab");
+        aT.cargarArchivo();
+        aT.setTabla(t1);        aT.setTabla(t2);        aT.setTabla(t3);
+        aT.escribirArchivo();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -859,6 +1063,7 @@ public class FrameL7 extends javax.swing.JFrame {
     private javax.swing.JButton b_limpiar1;
     private javax.swing.JButton b_limpiar2;
     private javax.swing.JButton b_limpiar3;
+    private javax.swing.JButton b_pasarCarroCliente;
     private javax.swing.JProgressBar barra1;
     private javax.swing.JProgressBar barra2;
     private javax.swing.JProgressBar barra3;
@@ -873,7 +1078,6 @@ public class FrameL7 extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -883,6 +1087,7 @@ public class FrameL7 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -896,6 +1101,8 @@ public class FrameL7 extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
