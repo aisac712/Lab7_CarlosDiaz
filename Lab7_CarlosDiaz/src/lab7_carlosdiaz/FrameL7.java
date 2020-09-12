@@ -93,10 +93,12 @@ public class FrameL7 extends javax.swing.JFrame {
         cb_empleadosF3 = new javax.swing.JComboBox<>();
         jScrollPane6 = new javax.swing.JScrollPane();
         tabla3 = new javax.swing.JTable();
-        jButton7 = new javax.swing.JButton();
+        b_limpiar1 = new javax.swing.JButton();
         barra1 = new javax.swing.JProgressBar();
         barra2 = new javax.swing.JProgressBar();
         barra3 = new javax.swing.JProgressBar();
+        b_limpiar2 = new javax.swing.JButton();
+        b_limpiar3 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -182,12 +184,6 @@ public class FrameL7 extends javax.swing.JFrame {
                     .addComponent(cb_tamano, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(267, Short.MAX_VALUE)))
         );
-
-        cb_todosCarros.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cb_todosCarrosItemStateChanged(evt);
-            }
-        });
 
         jLabel5.setText("Nombre");
 
@@ -295,11 +291,6 @@ public class FrameL7 extends javax.swing.JFrame {
         );
 
         cb_clientes.setPreferredSize(new java.awt.Dimension(31, 35));
-        cb_clientes.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cb_clientesItemStateChanged(evt);
-            }
-        });
 
         jl_carrosClientesE.setModel(new DefaultListModel());
         jScrollPane1.setViewportView(jl_carrosClientesE);
@@ -489,11 +480,27 @@ public class FrameL7 extends javax.swing.JFrame {
         ));
         jScrollPane6.setViewportView(tabla3);
 
-        jButton7.setText("Limpiar carros");
-        jButton7.setPreferredSize(new java.awt.Dimension(115, 35));
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        b_limpiar1.setText("Limpiar carros cB#1");
+        b_limpiar1.setPreferredSize(new java.awt.Dimension(115, 35));
+        b_limpiar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                b_limpiar1ActionPerformed(evt);
+            }
+        });
+
+        b_limpiar2.setText("Limpiar carros cB#2");
+        b_limpiar2.setPreferredSize(new java.awt.Dimension(115, 35));
+        b_limpiar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_limpiar2ActionPerformed(evt);
+            }
+        });
+
+        b_limpiar3.setText("Limpiar carros cB#3");
+        b_limpiar3.setPreferredSize(new java.awt.Dimension(115, 35));
+        b_limpiar3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_limpiar3ActionPerformed(evt);
             }
         });
 
@@ -541,18 +548,18 @@ public class FrameL7 extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel16)
                                 .addGap(18, 18, 18)
-                                .addComponent(cb_empleadosF2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(239, 239, 239))
+                                .addComponent(cb_empleadosF2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(19, 19, 19)
-                                .addComponent(barra3, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(222, 222, 222))))
+                                .addComponent(barra3, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(215, 215, 215)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(b_limpiar1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(b_limpiar2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(b_limpiar3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -604,13 +611,15 @@ public class FrameL7 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cb_empleadosF2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel16))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(b_limpiar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(b_limpiar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(b_limpiar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(21, 21, 21)
                 .addComponent(barra3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37))
@@ -678,6 +687,16 @@ public class FrameL7 extends javax.swing.JFrame {
             
             DefaultComboBoxModel modelito = (DefaultComboBoxModel) cb_clientes.getModel();
             modelito.addElement(clienteGlobal);
+            
+            /*Cliente c = new Cliente(tf_nombreC.getText(), tf_apellidoC.getText(), edad);
+            for (int i = 0; i < jl_carrosCliente.getMaxSelectionIndex(); i++) {                         //meterle los carros al cliente
+                DefaultListModel modeloLISTA = (DefaultListModel) jl_carrosCliente.getModel();
+                Carro carroParaCliente = (Carro) modeloLISTA.get(jl_carrosCliente.getSelectedIndex());
+                //System.out.println(carroParaCliente);
+                c.getCarrosC().add(carroParaCliente);
+                
+            }*/
+             //modelito.addElement(c);
             cb_clientes.setModel(modelito);
             
             jd_clientesCrear.setVisible(false);
@@ -686,51 +705,6 @@ public class FrameL7 extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_b_crearClienteActionPerformed
-
-    private void cb_todosCarrosItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_todosCarrosItemStateChanged
-        // COMBOBOX CARRO CLIENTE A LISTA CARROS CLIENTE
-        /*if (evt.getStateChange()==2) {
-            //clienteGlobal.getCarrosC() = new ArrayList();
-            //clienteGlobal = new Cliente();
-            
-            Carro carroSel = (Carro) cb_todosCarros.getSelectedItem();
-            clienteGlobal.getCarrosC().add(new Carro(carroSel.getPlaca(), carroSel.getTamano(), carroSel.getNumPuertas(), carroSel.getNivSuciedad()));
-            System.out.println(clienteGlobal.getCarrosC().get(0));
-            
-            DefaultListModel modelo = (DefaultListModel) jl_carrosCliente.getModel();
-
-            modelo.addElement(carroSel);
-            jl_carrosCliente.setModel(modelo);
-            
-            DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
-            modelo.addRow(newrow);
-            jTable1.setModel(modelo);
-            
-        }*/
-    }//GEN-LAST:event_cb_todosCarrosItemStateChanged
-
-    private void cb_clientesItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_clientesItemStateChanged
-        // AÑADIR CARROS DE UN CLIENTE A LA LISTA
-        /*if (evt.getStateChange()==2) {
-            Cliente clienteSel = (Cliente) cb_clientes.getSelectedItem();
-            //clienteGlobal.getCarrosC().add(new Carro(carroSel.getPlaca(), carroSel.getTamano(), carroSel.getNumPuertas(), carroSel.getNivSuciedad()));
-            
-            DefaultListModel modelo = (DefaultListModel) jl_carrosClientesE.getModel();
-            for (int i = 0; i < clienteSel.getCarrosC().size(); i++) {
-                System.out.println( "se anñadio el carro"+clienteSel.getCarrosC().get(i) );
-                /*modelo.addElement( new Carro(clienteSel.getCarrosC().get(i).getPlaca(), clienteSel.getCarrosC().get(i).getTamano(),
-                clienteSel.getCarrosC().get(i).getNumPuertas(), clienteSel.getCarrosC().get(i).getNivSuciedad()) );            //colocar cada carro en la lista
-                modelo.addElement( clienteSel.getCarrosC().get(i) );
-            }
-            
-            jl_carrosClientesE.setModel(modelo);
-            
-            DefaultTableModel modelo = (DefaultTableModel) jTable1.getModel();
-            modelo.addRow(newrow);
-            jTable1.setModel(modelo);
-            
-        }*/
-    }//GEN-LAST:event_cb_clientesItemStateChanged
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // AGARRAR LOS DE LA LISTA Y PASARLO A EMPLEADO
@@ -744,12 +718,12 @@ public class FrameL7 extends javax.swing.JFrame {
             DefaultListModel modelito
                 = (DefaultListModel) jl_carrosEmpleado.getModel();
 
-        //modelito.addElement(new Carro(carroParaEmpleado.getPlaca(), carroParaEmpleado.getTamano(), 
-        //        carroParaEmpleado.getNumPuertas(), carroParaEmpleado.getNivSuciedad()));            //añado el carro
-        modelito.addElement(carroParaEmpleado);            //añado el carro
+            //modelito.addElement(new Carro(carroParaEmpleado.getPlaca(), carroParaEmpleado.getTamano(), 
+            //        carroParaEmpleado.getNumPuertas(), carroParaEmpleado.getNivSuciedad()));            //añado el carro
+            modelito.addElement(carroParaEmpleado);            //añado el carro
 
-        empleadoGlobal.getCarrosE().add(carroParaEmpleado);
-        jl_carrosEmpleado.setModel(modelito);
+            empleadoGlobal.getCarrosE().add(carroParaEmpleado);
+            jl_carrosEmpleado.setModel(modelito);
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -811,9 +785,37 @@ public class FrameL7 extends javax.swing.JFrame {
         jl_carrosCliente.setModel(modelo);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        //LIMPIAR CARROS
-    }//GEN-LAST:event_jButton7ActionPerformed
+    private void b_limpiar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_limpiar1ActionPerformed
+        // LIMPIAR CARROS CB#1
+        Empleado empSel = (Empleado) cb_empleadosF.getSelectedItem();
+        for (int i = 0; i < empSel.getCarrosE().size(); i++) {
+            Carro carroSel = empSel.getCarrosE().get(i);
+            int limite;
+            if(carroSel.getTamano().equals("Grande")){
+                limite = (int) (carroSel.getNivSuciedad()*1.5);
+            } else if(carroSel.getTamano().equals("Mediano")){
+                limite = (int) (carroSel.getNivSuciedad()*1.8);
+            } else{
+                limite = (int) (carroSel.getNivSuciedad()*2.2);
+            }
+            barra1.setMaximum(limite);
+
+            hiloBarra hB = new hiloBarra(barra1, tabla1, carroSel, limite);
+            hB.start();
+            barra1.setValue(0);
+        }
+        
+        
+        
+    }//GEN-LAST:event_b_limpiar1ActionPerformed
+
+    private void b_limpiar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_limpiar2ActionPerformed
+        // LIMPIAR CARROS CB#2
+    }//GEN-LAST:event_b_limpiar2ActionPerformed
+
+    private void b_limpiar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_limpiar3ActionPerformed
+        // LIMPIAR CARROS CB#3
+    }//GEN-LAST:event_b_limpiar3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -854,6 +856,9 @@ public class FrameL7 extends javax.swing.JFrame {
     private javax.swing.JButton b_crearCarro;
     private javax.swing.JButton b_crearCliente;
     private javax.swing.JButton b_crearEmpleado;
+    private javax.swing.JButton b_limpiar1;
+    private javax.swing.JButton b_limpiar2;
+    private javax.swing.JButton b_limpiar3;
     private javax.swing.JProgressBar barra1;
     private javax.swing.JProgressBar barra2;
     private javax.swing.JProgressBar barra3;
@@ -869,7 +874,6 @@ public class FrameL7 extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
